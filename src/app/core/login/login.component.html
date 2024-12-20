@@ -1,0 +1,22 @@
+<div class="login-container">
+    <h1>LUDOTECA TAN</h1>
+    <div class="login-form">
+      <form>
+        <mat-form-field appearance="fill">
+          <mat-label>Usuario</mat-label>
+          <input matInput placeholder="Introduce tu usuario" [(ngModel)]="username" name="username" required />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Contraseña</mat-label>
+          <input matInput type="password" placeholder="Introduce tu contraseña" [(ngModel)]="password" name="password" required />
+        </mat-form-field>
+  
+        <button mat-flat-button color="primary">Entrar</button>
+      </form>
+  
+      <button mat-button class="guest-button" (click)="enterAsGuest()">
+        Entrar sin loguear
+      </button>
+    </div>
+  </div>

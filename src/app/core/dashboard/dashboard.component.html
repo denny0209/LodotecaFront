@@ -1,0 +1,14 @@
+<div *ngIf="isAdmin">
+    <h1>Bienvenido al Dashboard</h1>
+    <button (click)="goToAuthors()">Gestionar Autores</button>
+    <button (click)="goToCategories()">Gestionar Categorías</button>
+    <button (click)="goToClients()">Gestionar Clientes</button>
+  </div>
+  
+  <div *ngIf="!isAdmin">
+    <h1>Vista para Invitados</h1>
+    <p>Solo puedes ver los listados.</p>
+    <button (click)="goToAuthors()">Ver Autores</button>
+    <button (click)="goToCategories()">Ver Categorías</button>
+    <button (click)="goToClients()">Ver Clientes</button>
+  </div>
